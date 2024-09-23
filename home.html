@@ -29,9 +29,10 @@
                  <div class="divider"></div>
 
                  <!-- User action button -->
-                  <div>
+                  <div class="grid grid-cols-2 gap-5">
                     <button id="btn-show-add-money" class="btn btn-lg">Add Money</button>
                     <button id="btn-show-cash-out" class="btn btn-lg">Cash out</button>
+                    <button id="btn-show-transaction" class="btn btn-lg col-span-2">Transaction</button>
                   </div>
                   <div class="divider"></div>
                   <!-- add money Form start -->
@@ -79,13 +80,20 @@
                     </form>
                   </div>
                   <!-- Cash out form end -->
+                   <!-- Transaction start -->
+                    <div id="transaction-section">
+                        <h2 class="text-5xl text-center">Transaction History</h2>
+                    </div>
+                   <!-- Transaction end -->
 
               </div>
             </div>
           </div>
     </main>
+    <script src="js/utilities.js" ></script>
     <script src="js/home.js" ></script>
     <script src="js/cashout.js" ></script>
     <script src="js/features.js" ></script>
+    
   </body>
 </html>

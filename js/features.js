@@ -1,9 +1,11 @@
 document.getElementById('btn-show-cash-out').addEventListener('click',function(){
-    document.getElementById('cashout-form').classList.remove('hidden')
-    document.getElementById('addMoney-form').classList.add('hidden')
+    showSectionById('cashout-form')
 })
 
 document.getElementById('btn-show-add-money').addEventListener('click',function(){
-    document.getElementById('addMoney-form').classList.remove('hidden')
-    document.getElementById('cashout-form').classList.add('hidden')
+    showSectionById('addMoney-form')
 })
+document.getElementById('btn-show-transaction').addEventListener('click',function(){
+    showSectionById('transaction-section')
+})
+

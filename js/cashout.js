@@ -1,10 +1,9 @@
 document.getElementById('btn-cash-out').addEventListener('click', function(event){
     event.preventDefault()
-    const cashOut = document.getElementById('input-cash-out').value
-    const pinNumber = document.getElementById('input-cash-out-pin').value
-    console.log(cashOut, pinNumber);
-    if(pinNumber === '123'){
-        const balance = parseFloat(document.getElementById("account-balance").innerText)
+    const cashOut = getInputFieldById('input-cash-out')
+    const pinNumber = getInputFieldById('input-cash-out-pin')
+    if(pinNumber === 123){
+        const balance = getTextFieldById('account-balance')
         updatedBalance = balance - cashOut
         document.getElementById('account-balance').innerText = updatedBalance
         

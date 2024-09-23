@@ -5,14 +5,16 @@ document.getElementById("btn-add-money").addEventListener("click", function (eve
     event.preventDefault();
 
     //step 2:
-    const addMoneyInput = document.getElementById("input-add-money").value;
-    const pinNumberInput = document.getElementById("input-pin-number").value;
+    const addMoneyInput = getInputFieldById('input-add-money')
+    const pinNumberInput = getInputFieldById('input-pin-number')
+    
+    
     //step 3:
-    if (pinNumberInput === "123") {
+    if (pinNumberInput === 123) {
       //step 4:
-      const balance = parseFloat(document.getElementById("account-balance").innerText)      
-      const addMoneyNumber = parseFloat(addMoneyInput)
-      updatedBalance = balance + addMoneyNumber
+      const balance = getTextFieldById('account-balance') 
+      console.log(balance);
+      updatedBalance = balance + addMoneyInput
       document.getElementById('account-balance').innerText = updatedBalance
 
     } else {
